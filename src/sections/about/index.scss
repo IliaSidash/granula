@@ -1,0 +1,70 @@
+.about {
+  padding: 20px 0;
+
+  &__picture {
+    position: relative;
+    margin-bottom: 20px;
+    height: 161px;
+
+    background-image: url('/static/images/about.jpg');
+    background-size: cover;
+
+    @include md {
+      background-image: url('/static/images/about-768.jpg');
+    }
+
+    @include xl {
+      height: 540px;
+      background-image: url('/static/images/about-img.jpg');
+    }
+  }
+
+  &__decore {
+    position: absolute;
+    right: -105px;
+    bottom: -42px;
+    width: 350px;
+    height: 301px;
+
+    background-image: url('/static/images/about-decor.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__tag {
+    margin-bottom: 20px;
+
+    @include xl {
+      margin-top: 30px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include xl {
+      margin-bottom: 25px;
+      h2 {
+        font-size: 38px;
+        line-height: 120%;
+      }
+    }
+  }
+
+  &__text {
+    margin-bottom: 20px;
+
+    @include xl {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+
+    @include md {
+      text-align: left;
+    }
+  }
+}

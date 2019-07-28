@@ -1,0 +1,64 @@
+-
+  const list2 = [
+    {
+      title: 'Волгоградская область:',
+      items: [
+        '- Волгоградское ПХГ Небольшая область рядом с с. Красный Пахарь'
+        ]
+    },
+    {
+      title: 'Азербайджан:',
+      items: [
+        '- Месторождения Шах-Дениз',
+        '- Нефтяные Камни в Каспийском море'
+        ]
+    },
+    {
+      title: 'Казахстан:',
+      items: [
+        '- Мангистауская область ',
+        '- Месторождение Узень',
+        '- Месторождение Каламкас',
+        '- Месторождение Жетыбай'
+        ]
+    },
+    {
+      title: 'Узбекистан:',
+      items: [
+        '- Бухарская область',
+        '- Месторождение Газлинское',
+        '- Месторождение Кандымское',
+        '- Месторождение Култакское'
+        ]
+    },
+    {
+      title: 'Узбекистан:',
+      items: [
+        '- Бухарская область',
+        '- Месторождение Газлинское',
+        '- Месторождение Кандымское',
+        '- Месторождение Култакское'
+        ]
+    },
+  ];
+
+section.geography
+  .container
+    h2.geography__title.title География деятельности
+    .geography__slider
+      .geography__arrows
+        .geography__arrow-prev
+          +arrow({next:false, theme: 'without-border'})
+        .geography__arrow-next
+          +arrow({theme: 'without-border'})
+      .js-geography-slider.geography__slider-wrapper
+        each slide in list2
+          .geography__slide
+            .geography__slide-content
+              h3.geography__slide-title= slide.title
+              ul.geography__slide-list
+                each item in slide.items
+                  li.geography__slide-item= item
+    .geography__map-container
+      .geography__map
+        

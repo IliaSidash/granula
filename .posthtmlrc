@@ -1,0 +1,5 @@
+{
+  "plugins": {
+    "posthtml-beautify": {rules: {indent: 2}}
+  }
+}

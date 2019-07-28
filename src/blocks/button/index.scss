@@ -1,0 +1,37 @@
+.button {
+  height: 46px;
+  padding: 0 38px;
+
+  font-family: $ff-sans-pro, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+
+  border-radius: 2px;
+
+  transition: background-color 0.3s, color 0.3s;
+
+  &_theme_primary {
+    background-color: $c-blue;
+    color: #fff;
+    border: 1px solid $c-blue;
+
+    &:hover {
+      background-color: $c-blue-hover;
+      border-color: $c-blue-hover;
+    }
+  }
+
+  &_theme_outline {
+    color: $c-blue;
+
+    border: 1px solid $c-blue;
+    border-radius: 2px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $c-blue;
+      color: #fff;
+    }
+  }
+}

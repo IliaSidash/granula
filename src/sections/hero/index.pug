@@ -1,0 +1,27 @@
+section.hero
+  .hero__slider
+    .js-hero-slider
+      .hero__slide(style="background-image: url(./static/images/slider-img1.jpg);")
+        .container
+          h2.hero__slide-title Комплекс легких решений
+          h2.hero__slide-title.hero__slide-title_accent сложных задач
+          .text.hero__slide-text
+            p Поставщик специальных минеральных заполнителей и комплексных добавок – для предприятий добывающей промышленности, производителей огнестойких материалов, облегченных цементных систем.
+          .hero__slide-button
+            +button({text:'Смотреть продукцию'})
+      .hero__slide(style="background-image: url(./static/images/slider-img2.jpg);")
+        .container
+          h2.hero__slide-title Комплекс легких решений
+          h2.hero__slide-title.hero__slide-title_accent сложных задач
+          .text.hero__slide-text
+            p Поставщик специальных минеральных заполнителей и комплексных добавок – для предприятий добывающей промышленности, производителей огнестойких материалов, облегченных цементных систем.
+          .hero__slide-button
+            +button({text:'Смотреть продукцию'})
+    .hero__slider-arrows
+      .container.d-flex.justify-content-between
+        .hero__slider-arrow.hero__slider-arrow-prev
+          +arrow({next: false})  
+        .hero__slider-arrow.hero__slider-arrow-next
+          +arrow({})
+    .hero__slider-nav
+      .hero__slider-dots

@@ -1,0 +1,82 @@
+.statistics {
+  padding-top: 10px;
+  &__wrap {
+    @include xl {
+      display: flex;
+      margin: 0 -15px;
+
+      .statistics__grafic {
+        width: calc(50% - 30px);
+        margin: 0 15px;
+      }
+    }
+  }
+
+  &__grafic {
+    margin-bottom: 20px;
+    overflow: auto;
+
+    @include xl {
+      margin-bottom: 30px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 593px;
+
+    &_top {
+      background-image: url(/static/images/grafic1-mobile.jpg);
+      height: 315px;
+
+      @include md {
+        height: 365px;
+      }
+
+      @include xl {
+        background-image: url(/static/images/grafic1.jpg);
+        height: 375px;
+      }
+    }
+
+    &_middle {
+      background-image: url(/static/images/grafic2-mobile.jpg);
+      height: 353px;
+
+      @include md {
+        height: 413px;
+      }
+
+      @include xl {
+        height: 423px;
+        background-image: url(/static/images/grafic2.jpg);
+      }
+    }
+
+    &_bottom {
+      background-image: url(/static/images/grafic3-mobile.jpg);
+      height: 353px;
+
+      @include md {
+        height: 413px;
+      }
+      @include xl {
+        height: 423px;
+        background-image: url(/static/images/grafic3.jpg);
+      }
+    }
+
+    @include md {
+      width: 100%;
+    }
+  }
+  @include xl {
+    padding-top: 20px;
+  }
+}

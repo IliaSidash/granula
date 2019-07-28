@@ -1,0 +1,138 @@
+.system {
+  position: relative;
+  margin-top: 40px;
+  padding: 40px 0;
+
+  background-position: 100% 50%;
+  background-size: cover;
+
+  &:after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+    @include xl {
+      display: none;
+    }
+  }
+
+  &__content {
+    @include xl {
+      position: relative;
+      top: 70px;
+
+      padding: 70px 138px;
+
+      background-color: #fff;
+      box-shadow: 0px 2px 10px rgba(10, 44, 79, 0.15);
+    }
+  }
+
+  &__tag,
+  &__title,
+  &__text,
+  &__btn {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__tag {
+    margin-bottom: 20px;
+
+    @include xl {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    @include md {
+      margin-bottom: 25px;
+
+      font-size: 28px;
+      line-height: 120%;
+    }
+
+    @include xl {
+      font-size: 34px;
+      line-height: 120%;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 20px;
+
+    &:nth-child(n + 2) {
+      display: none;
+    }
+    @include md {
+      position: relative;
+
+      padding-left: 30px;
+      &:nth-child(n + 2) {
+        display: block;
+      }
+
+      &:last-child {
+        margin-bottom: 25px;
+      }
+
+      &:before {
+        content: '';
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        width: 16px;
+        height: 16px;
+
+        border: 1px solid #0d58a6;
+        border-radius: 2px;
+
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gIDxwYXRoIGQ9Ik0xIDNsMyAzLjVMOSAxIiBzdHJva2U9IiMwRDU4QTYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4=);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    @include xl {
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__btn {
+    .button {
+      padding: 0 25px;
+    }
+
+    @include md {
+      text-align: center;
+    }
+  }
+
+  @include md {
+    padding: 50px 0;
+  }
+
+  @include xl {
+    padding-top: 167px;
+    padding-bottom: 0;
+    margin-bottom: 70px;
+  }
+}

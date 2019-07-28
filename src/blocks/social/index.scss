@@ -1,0 +1,38 @@
+.social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+
+  &_regular {
+    background-color: $c-blue;
+
+    &:hover {
+      background-color: lighten($c-blue, 10%);
+    }
+  }
+
+  &_secondary {
+    background-color: #777777;
+    &:hover {
+      background-color: lighten(#777777, 10%);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__svg {
+    width: 14px;
+    height: 12px;
+
+    path {
+      fill: #fff;
+    }
+  }
+}

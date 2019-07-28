@@ -1,0 +1,62 @@
+-
+  const news = [
+    {
+      img:'news',
+      date: '03/04/2019',
+      title: 'IV Всероссийский Конгресс «Промышленная экология регионов» пройдет в Екатеринбурге 13 и 14 марта следующего года',
+      desc:'Управление образования Асбестовского городского округа выразило благодарность генеральному директору ООО «Гранула» Демидову Андрею Владимировичу за вклад в развитие с'
+    },
+    {
+      img:'news',
+      date: '03/04/2019',
+      title: 'Министр природных ресурсов посетил «ГРАНПАРК»',
+      desc:'Управление образования Асбестовского городского округа выразило благодарность генеральному директору ООО «Гранула» Демидову Андрею Владимировичу за вклад в развитие с'
+    },
+    {
+      img:'news',
+      date: '03/04/2019',
+      title: 'IV Всероссийский Конгресс «Промышленная экология регионов» пройдет в Екатеринбурге 13 и 14 марта следующего года',
+      desc:'Управление образования Асбестовского городского округа выразило благодарность генеральному директору ООО «Гранула» Демидову Андрею Владимировичу за вклад в развитие с'
+    },
+    {
+      img:'news',
+      date: '03/04/2019',
+      title: 'Гранула оформит шефство над детским садом № 59 «Малыш» в Асбесте',
+      desc:'Управление образования Асбестовского городского округа выразило благодарность генеральному директору ООО «Гранула» Демидову Андрею Владимировичу за вклад в развитие с'
+    }
+  ];
+
+section.news
+  .container
+    .news__header
+      h2.news__title.title Новости
+      a.news__link(href="#")  Все новости
+    ul.news__list
+      each item, index in news
+        if index === 0
+          li.news__item.news__item_left
+            a.news__list-link(href="#")
+              span.news__picture(style=`background-image: url(/static/images/${item.img}.jpg);`)
+              span.news__text
+                span.news__list-title
+                  span= item.title
+                span.news__list-desc
+                  span= item.desc
+                span.news__date
+                  span= item.date
+                span.news__list-details Подробнее
+      li.news__item.news__item_right
+        each item, index in news
+          if index > 0
+            a.news__list-link(href="#")
+              span.news__picture(style=`background-image: url(/static/images/${item.img}.jpg);`)
+              span.news__text
+                span.news__list-title
+                  span= item.title
+                span.news__list-desc
+                  span= item.desc
+                span.news__date
+                  span= item.date
+                span.news__list-details Подробнее
+        
+      

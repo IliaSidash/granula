@@ -1,0 +1,15 @@
+.play {
+  background-image: url(/static/images/play-small.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 144px;
+  height: 144px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.hidden {
+    visibility: hidden;
+  }
+}

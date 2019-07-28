@@ -1,0 +1,16 @@
+.tag {
+  display: inline-block;
+  padding: 0 10px;
+  height: 26px;
+
+  font-family: $ff-sans-pro, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 26px;
+
+  background-color: #2e9be7;
+  border-radius: 2px;
+  color: #fff;
+}

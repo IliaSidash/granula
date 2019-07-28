@@ -1,0 +1,26 @@
+@import 'mixins';
+@import 'vars';
+@import 'base';
+
+@import '../blocks/button/index';
+@import '../blocks/localization/index';
+@import '../blocks/search/index';
+@import '../blocks/arrow/index';
+@import '../blocks/social/index';
+@import '../blocks/burger/index';
+@import '../blocks/tag/index';
+@import '../blocks/play/index';
+@import '../blocks/close/index';
+
+@import '../sections/header/index';
+@import '../sections/hero/index';
+@import '../sections/about/index';
+@import '../sections/advantages/index';
+@import '../sections/products/index';
+@import '../sections/video/index';
+@import '../sections/geography/index';
+@import '../sections/system/index';
+@import '../sections/smq/index';
+@import '../sections/certificates/index';
+@import '../sections/statistics/index';
+@import '../sections/news/index';

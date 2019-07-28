@@ -1,0 +1,5 @@
+mixin tag({text, href})
+  if href
+    a.tag(href=href)= text
+  else
+    span.tag= text

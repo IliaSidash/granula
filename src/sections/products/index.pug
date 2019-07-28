@@ -1,0 +1,37 @@
+-
+  const list = [
+    {
+      img: 'product1.jpg',
+      title: 'Легкие заполнители',
+      desc: 'Компания выпускает различные марки микросфер с разными качественными характеристиками в соответствии с областями применения.',
+    },
+    {
+      img: 'product2.jpg',
+      title: 'Специальные цементные тампонажные системы',
+      desc: 'Предприятием разработаны различные унифицированные составы тампонажных смесей, являющиеся готовым материалом.',
+    },
+    {
+      img: 'product3.jpg',
+      title: 'Специальные цементные тампонажные системы',
+      desc: 'Предприятием разработаны различные унифицированные составы тампонажных смесей, являющиеся готовым материалом.',
+    },
+  ];
+
+section.products
+  .container
+    .products__title
+      h2 Наша продукция
+      a(href="#") вся продукция
+    ul.products__list
+      each item in list
+        li.products__item
+          a(href="#")
+            span.products__left
+              span.products__img(style=`background-image: url(static/images/${item.img});`)
+            span.products__right
+              span.products__text
+                span.products__item-title= item.title
+                span.text.products__desc
+                  span= item.desc
+              span.products__link
+                span Подробнее

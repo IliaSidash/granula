@@ -1,0 +1,30 @@
+.burger {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 16px;
+
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+    .burger__item:last-child {
+      transform: translate(0, 0);
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    border-radius: 1px;
+
+    transition: transform 0.3s;
+
+    &:last-child {
+      transform: translate(-30%, 0);
+    }
+  }
+}

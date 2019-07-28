@@ -1,0 +1,7 @@
+mixin arrow({next=true, theme='with-border'})
+  span.arrow(class=`arrow_${theme}`)
+    svg(width='10', height='18', fill='none', xmlns='http://www.w3.org/2000/svg')
+      if next
+        path(d='M1 1l8 8-8 8', stroke='#fff', stroke-linecap='round', stroke-linejoin='round')
+      else
+        path(d='M9 17L1 9l8-8', stroke='#fff', stroke-linecap='round', stroke-linejoin='round')

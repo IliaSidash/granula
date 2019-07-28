@@ -1,0 +1,22 @@
+.smq {
+  padding: 40px 0;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    @include xl {
+      margin: 0 -15px;
+
+      p {
+        width: calc(50% - 30px);
+        margin: 0 15px;
+      }
+    }
+  }
+
+  @include md {
+    padding-bottom: 20px;
+  }
+}

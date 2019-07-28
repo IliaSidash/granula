@@ -1,0 +1,57 @@
+.arrow {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 2px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  transition: backgroud 0.3s;
+
+  path {
+    stroke: #4a5064;
+  }
+
+  &:hover,
+  &:hover {
+    cursor: pointer;
+    background-color: $c-blue;
+
+    path {
+      stroke: #fff;
+    }
+  }
+
+  &_with-border {
+    border: 1px solid #4a5064;
+
+    &:hover {
+      border-color: $c-blue;
+    }
+  }
+
+  &_light {
+    border-color: #fff;
+    path {
+      stroke: #fff;
+    }
+
+    &:hover {
+      border-color: #fff;
+      background-color: #fff;
+
+      path {
+        stroke: $c-blue;
+      }
+    }
+  }
+
+  &_without-border {
+    box-shadow: 0px 2px 10px rgba(10, 44, 79, 0.2);
+    background-color: #ffffff;
+  }
+}
