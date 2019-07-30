@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Oswald:300,400|Roboto|Roboto+Condensed|Source+Sans+Pro:400,600&amp;display=swap">
+  <title>Granula</title>
+  <link rel="stylesheet" href="/build/main.dca844f5.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top d-none d-xl-block">
+      <div class="container">
+        <div class="d-xl-flex">
+          <ul class="header__contacts">
+            <li class="header__contacts-item">
+              <a href="mailto:granula@granula-ural.ru">
+                granula@granula-ural.ru
+                <svg xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+            <li class="header__contacts-item">
+              <a href="tel:8 (343) 379-21-58">
+                8 (343) 379-21-58
+                <svg xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M497.39 361.8l-112-48a24 24 0 00-28 6.9l-49.6 60.6A370.66 370.66 0 01130.6 204.11l60.6-49.6a23.94 23.94 0 006.9-28l-48-112A24.16 24.16 0 00122.6.61l-104 24A24 24 0 000 48c0 256.5 207.9 464 464 464a24 24 0 0023.4-18.6l24-104a24.29 24.29 0 00-14.01-27.6z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="header__socials ml-auto d-flex align-items-center">
+            <li class="header__socials-item">
+              <span class="social social_regular">
+                <a href="#" target="_blank">
+                  <svg class="social__svg" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor"
+                      d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </li>
+            <li class="header__socials-item">
+              <span class="social social_regular">
+                <a href="#" target="_blank">
+                  <svg class="social__svg" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor"
+                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </li>
+            <li class="header__socials-item">
+              <span class="social social_regular">
+                <a href="#" target="_blank">
+                  <svg class="social__svg" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor"
+                      d="M275.1 334c-27.4 17.4-65.1 24.3-90 26.9l20.9 20.6 76.3 76.3c27.9 28.6-17.5 73.3-45.7 45.7-19.1-19.4-47.1-47.4-76.3-76.6L84 503.4c-28.2 27.5-73.6-17.6-45.4-45.7 19.4-19.4 47.1-47.4 76.3-76.3l20.6-20.6c-24.6-2.6-62.9-9.1-90.6-26.9-32.6-21-46.9-33.3-34.3-59 7.4-14.6 27.7-26.9 54.6-5.7 0 0 36.3 28.9 94.9 28.9s94.9-28.9 94.9-28.9c26.9-21.1 47.1-8.9 54.6 5.7 12.4 25.7-1.9 38-34.5 59.1zM30.3 129.7C30.3 58 88.6 0 160 0s129.7 58 129.7 129.7c0 71.4-58.3 129.4-129.7 129.4s-129.7-58-129.7-129.4zm66 0c0 35.1 28.6 63.7 63.7 63.7s63.7-28.6 63.7-63.7c0-35.4-28.6-64-63.7-64s-63.7 28.6-63.7 64z">
+                    </path>
+                  </svg>
+                </a>
+              </span>
+            </li>
+          </ul>
+          <div class="header__localization">
+            <ul class="localization">
+              <li class="localization__item"> <a class="localization__link localization__link_active" href="#">RU</a>
+              </li>
+              <li class="localization__item"> <a class="localization__link" href="#">EN</a> </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="header__burger align-self-start"> <span class="burger" title="menu"> <span
+                class="burger__item"></span>
+              <span class="burger__item"></span>
+              <span class="burger__item"></span> </span>
+          </div>
+          <a class="header__logo" href="/"> <img class="header__img" src="/static/logo.1ffdfc6d.png" alt="granula logo"
+              widht="64" height="43"> </a>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item header__menu-item_active">
+                <span class="header__menu-union">
+                  <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M.146.707l3.147 3.146L.146 7l.708.707 3.5-3.5.353-.353-.353-.354L.854 0 .146.707zm2.5 0l3.147 3.146L2.646 7l.708.707 3.5-3.5.353-.353-.353-.354-3.5-3.5-.707.707z"
+                      fill="#777"></path>
+                  </svg>
+                </span>
+                <a class="header__menu-link" href="#">Главная</a>
+              </li>
+              <li class="header__menu-item header__menu-item_">
+                <span class="header__menu-union">
+                  <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M.146.707l3.147 3.146L.146 7l.708.707 3.5-3.5.353-.353-.353-.354L.854 0 .146.707zm2.5 0l3.147 3.146L2.646 7l.708.707 3.5-3.5.353-.353-.353-.354-3.5-3.5-.707.707z"
+                      fill="#777"></path>
+                  </svg>
+                </span>
+                <a class="header__menu-link" href="#">Новости</a>
+              </li>
+              <li class="header__menu-item header__menu-item_with-submenu header__menu-item_">
+                <span class="header__menu-union">
+                  <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M.146.707l3.147 3.146L.146 7l.708.707 3.5-3.5.353-.353-.353-.354L.854 0 .146.707zm2.5 0l3.147 3.146L2.646 7l.708.707 3.5-3.5.353-.353-.353-.354-3.5-3.5-.707.707z"
+                      fill="#777"></path>
+                  </svg>
+                </span>
+                <a class="header__menu-link" href="#">О компании</a>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <span class="header__menu-union">
+                      <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M.146.707l3.147 3.146L.146 7l.708.707 3.5-3.5.353-.353-.353-.354L.854 0 .146.707zm2.5 0l3.147 3.146L2.646 7l.708.707 3.5-3.5.353-.353-.353-.354-3.5-3.5-.707.707z"
+                          fill="#777"></path>
+                      </svg>
+                    </span>
+                    <a class="submenu__link" href="">Реквизиты</a>
+                  </li>
+                  <li class="submenu__item">
+                    <span class="header__menu-union">
+                      <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M.146.707l3.147 3.146L.146 7l.708.707 3.5-3.5.353-.353-.353-.354L.854 0 .146.707zm2.5 0l3.147 3.146L2.646 7l.708.707 3.5-3.5.353-.353-.353-.354-3.5-3.5-.707.707z"
+                          fill="#777"></path>
+                      </svg>
+                    </span>
+                    <a class="submenu__link" href="">Реквизиты</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item header__menu-item_">
+                <span class="header__menu-union">
+                  <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M.146.707l3.147 3.146L.146 7l.708.707 3.5-3.5.353-.353-.353-.354L.854 0 .146.707zm2.5 0l3.147 3.146L2.646 7l.708.707 3.5-3.5.353-.353-.353-.354-3.5-3.5-.707.707z"
+                      fill="#777"></path>
+                  </svg>
+                </span>
+                <a class="header__menu-link" href="#">Продукция</a>
+              </li>
+              <li class="header__menu-item header__menu-item_">
+                <span class="header__menu-union">
+                  <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M.146.707l3.147 3.146L.146 7l.708.707 3.5-3.5.353-.353-.353-.354L.854 0 .146.707zm2.5 0l3.147 3.146L2.646 7l.708.707 3.5-3.5.353-.353-.353-.354-3.5-3.5-.707.707z"
+                      fill="#777"></path>
+                  </svg>
+                </span>
+                <a class="header__menu-link" href="#">Научные исследованияи разработки</a>
+              </li>
+              <li class="header__menu-item header__menu-item_">
+                <span class="header__menu-union">
+                  <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M.146.707l3.147 3.146L.146 7l.708.707 3.5-3.5.353-.353-.353-.354L.854 0 .146.707zm2.5 0l3.147 3.146L2.646 7l.708.707 3.5-3.5.353-.353-.353-.354-3.5-3.5-.707.707z"
+                      fill="#777"></path>
+                  </svg>
+                </span>
+                <a class="header__menu-link" href="#">Экологическая политика</a>
+              </li>
+              <li class="header__menu-item header__menu-item_">
+                <span class="header__menu-union">
+                  <svg width="8" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M.146.707l3.147 3.146L.146 7l.708.707 3.5-3.5.353-.353-.353-.354L.854 0 .146.707zm2.5 0l3.147 3.146L2.646 7l.708.707 3.5-3.5.353-.353-.353-.354-3.5-3.5-.707.707z"
+                      fill="#777"></path>
+                  </svg>
+                </span>
+                <a class="header__menu-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__localization ml-auto d-xl-none">
+            <ul class="localization">
+              <li class="localization__item"> <a class="localization__link localization__link_active" href="#">RU</a>
+              </li>
+              <li class="localization__item"> <a class="localization__link" href="#">EN</a> </li>
+            </ul>
+          </div>
+          <div class="header__search ml-xl-auto">
+            <buttom class="search"></buttom>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero__slider">
+      <div class="js-hero-slider">
+        <div class="hero__slide" style="background-image:url(/static/slider-img1.33923281.jpg);">
+          <div class="container">
+            <h2 class="hero__slide-title">Комплекс легких решений</h2>
+            <h2 class="hero__slide-title hero__slide-title_accent">сложных задач</h2>
+            <div class="text hero__slide-text">
+              <p>Поставщик специальных минеральных заполнителей и комплексных добавок – для предприятий добывающей
+                промышленности, производителей огнестойких материалов, облегченных цементных систем.</p>
+            </div>
+            <div class="hero__slide-button"> <button class="button button_theme_primary">Смотреть продукцию</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero__slide" style="background-image:url(/static/slider-img2.322eb55d.jpg);">
+          <div class="container">
+            <h2 class="hero__slide-title">Комплекс легких решений</h2>
+            <h2 class="hero__slide-title hero__slide-title_accent">сложных задач</h2>
+            <div class="text hero__slide-text">
+              <p>Поставщик специальных минеральных заполнителей и комплексных добавок – для предприятий добывающей
+                промышленности, производителей огнестойких материалов, облегченных цементных систем.</p>
+            </div>
+            <div class="hero__slide-button"> <button class="button button_theme_primary">Смотреть продукцию</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slider-arrows">
+        <div class="container d-flex justify-content-between">
+          <div class="hero__slider-arrow hero__slider-arrow-prev">
+            <span class="arrow arrow_with-border">
+              <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 17L1 9l8-8" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </div>
+          <div class="hero__slider-arrow hero__slider-arrow-next">
+            <span class="arrow arrow_with-border">
+              <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1l8 8-8 8" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slider-nav">
+        <div class="hero__slider-dots"></div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-xl-5">
+          <div class="about__picture"> <span class="about__decore d-none d-xl-block"></span> </div>
+        </div>
+        <div class="col-12 col-xl-6 offset-xl-1">
+          <div class="about__tag"> <a class="tag" href="#">о компании</a> </div>
+          <div class="title about__title">
+            <h2>Крупнейший производитель специальных цементов в РФ</h2>
+          </div>
+          <div class="text about__text">
+            <p>ООО «Гранула» – начав с 2000 г. формирование рынка легких заполнителей, на сегодня является крупнейшим
+              поставщиком специальных минеральных заполнителей и комплексных добавок – для предприятий добывающей
+              промышленности, производителей огнестойких материалов, облегченных цементных систем. В проведении
+              внедренческих мероприятий ООО «Гранула» использует российские технологии и успешный внедренческий и
+              организационный зарубежный опыт и уникальные продукты.</p>
+          </div>
+          <div class="about__btn"> <button class="button button_theme_outline">Подробнее о компании</button> </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <div class="advantages__icon"> <img class="advantages__img" src="/static/icon1.aad26296.svg" alt="statistics">
+          </div>
+          <h2 class="advantages__title"> с
+            <span>2007</span>
+            г.
+          </h2>
+          <div class="text advantages__desc">
+            <p>На рынке специальных тампонажных материалов</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__icon"> <img class="advantages__img" src="/static/icon2.ae965ef1.svg" alt="statistics">
+          </div>
+          <h2 class="advantages__title"> в год
+            <span>200</span>
+            тыс.
+          </h2>
+          <div class="text advantages__desc">
+            <p>производственные мощности по выпуску пордукции</p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__icon"> <img class="advantages__img" src="/static/icon3.ff60a301.svg" alt="statistics">
+          </div>
+          <h2 class="advantages__title"> более
+            <span>45</span>
+            марок
+          </h2>
+          <div class="text advantages__desc">
+            <p>выпускаемых тампонажных цементных смесей</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="products">
+    <div class="container">
+      <div class="products__title">
+        <h2>Наша продукция</h2>
+        <a href="#">вся продукция</a>
+      </div>
+      <ul class="products__list">
+        <li class="products__item"> <a href="#"> <span class="products__left"> <span class="products__img"
+                style="background-image:url(/static/product1.641663fd.jpg);"></span> </span>
+            <span class="products__right"> <span class="products__text"> <span class="products__item-title">Легкие
+                  заполнители</span>
+                <span class="text products__desc"> <span>Компания выпускает различные марки микросфер с разными
+                    качественными характеристиками в соответствии с областями применения.</span> </span> </span>
+              <span class="products__link"> <span>Подробнее</span> </span> </span> </a>
+        </li>
+        <li class="products__item"> <a href="#"> <span class="products__left"> <span class="products__img"
+                style="background-image:url(/static/product2.391827d5.jpg);"></span> </span>
+            <span class="products__right"> <span class="products__text"> <span class="products__item-title">Специальные
+                  цементные тампонажные системы</span>
+                <span class="text products__desc"> <span>Предприятием разработаны различные унифицированные составы
+                    тампонажных смесей, являющиеся готовым материалом.</span> </span> </span>
+              <span class="products__link"> <span>Подробнее</span> </span> </span> </a>
+        </li>
+        <li class="products__item"> <a href="#"> <span class="products__left"> <span class="products__img"
+                style="background-image:url(/static/product3.f4e4d562.jpg);"></span> </span>
+            <span class="products__right"> <span class="products__text"> <span class="products__item-title">Специальные
+                  цементные тампонажные системы</span>
+                <span class="text products__desc"> <span>Предприятием разработаны различные унифицированные составы
+                    тампонажных смесей, являющиеся готовым материалом.</span> </span> </span>
+              <span class="products__link"> <span>Подробнее</span> </span> </span> </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="video">
+    <div class="container">
+      <div class="video__container">
+        <div class="play"></div>
+        <img class="video__media" src="/static/video.60557b4a.jpg" alt="thumbnail">
+      </div>
+    </div>
+  </section>
+  <section class="geography">
+    <div class="container">
+      <h2 class="geography__title title">География деятельности</h2>
+      <div class="geography__slider">
+        <div class="geography__arrows">
+          <div class="geography__arrow-prev">
+            <span class="arrow arrow_without-border">
+              <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 17L1 9l8-8" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </div>
+          <div class="geography__arrow-next">
+            <span class="arrow arrow_without-border">
+              <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1l8 8-8 8" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="js-geography-slider geography__slider-wrapper">
+          <div class="geography__slide">
+            <div class="geography__slide-content">
+              <h3 class="geography__slide-title">Волгоградская область:</h3>
+              <ul class="geography__slide-list">
+                <li class="geography__slide-item">- Волгоградское ПХГ Небольшая область рядом с с. Красный Пахарь</li>
+              </ul>
+            </div>
+          </div>
+          <div class="geography__slide">
+            <div class="geography__slide-content">
+              <h3 class="geography__slide-title">Азербайджан:</h3>
+              <ul class="geography__slide-list">
+                <li class="geography__slide-item">- Месторождения Шах-Дениз</li>
+                <li class="geography__slide-item">- Нефтяные Камни в Каспийском море</li>
+              </ul>
+            </div>
+          </div>
+          <div class="geography__slide">
+            <div class="geography__slide-content">
+              <h3 class="geography__slide-title">Казахстан:</h3>
+              <ul class="geography__slide-list">
+                <li class="geography__slide-item">- Мангистауская область</li>
+                <li class="geography__slide-item">- Месторождение Узень</li>
+                <li class="geography__slide-item">- Месторождение Каламкас</li>
+                <li class="geography__slide-item">- Месторождение Жетыбай</li>
+              </ul>
+            </div>
+          </div>
+          <div class="geography__slide">
+            <div class="geography__slide-content">
+              <h3 class="geography__slide-title">Узбекистан:</h3>
+              <ul class="geography__slide-list">
+                <li class="geography__slide-item">- Бухарская область</li>
+                <li class="geography__slide-item">- Месторождение Газлинское</li>
+                <li class="geography__slide-item">- Месторождение Кандымское</li>
+                <li class="geography__slide-item">- Месторождение Култакское</li>
+              </ul>
+            </div>
+          </div>
+          <div class="geography__slide">
+            <div class="geography__slide-content">
+              <h3 class="geography__slide-title">Узбекистан:</h3>
+              <ul class="geography__slide-list">
+                <li class="geography__slide-item">- Бухарская область</li>
+                <li class="geography__slide-item">- Месторождение Газлинское</li>
+                <li class="geography__slide-item">- Месторождение Кандымское</li>
+                <li class="geography__slide-item">- Месторождение Култакское</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="geography__map-container">
+        <div class="geography__map"></div>
+      </div>
+    </div>
+  </section>
+  <section class="statistics">
+    <div class="container">
+      <div class="statistics__grafic">
+        <div class="statistics__img statistics__img_top"></div>
+      </div>
+      <div class="statistics__wrap">
+        <div class="statistics__grafic">
+          <div class="statistics__img statistics__img_middle"></div>
+        </div>
+        <div class="statistics__grafic">
+          <div class="statistics__img statistics__img_bottom"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="container">
+      <div class="news__header">
+        <h2 class="news__title title">Новости</h2>
+        <a class="news__link" href="#">Все новости</a>
+      </div>
+      <ul class="news__list">
+        <li class="news__item news__item_left"> <a class="news__list-link" href="#"> <span class="news__picture"
+              style="background-image:url(/static/news.e2c8d649.jpg);"></span>
+            <span class="news__text"> <span class="news__list-title"> <span>IV Всероссийский Конгресс «Промышленная
+                  экология регионов» пройдет в Екатеринбурге 13 и 14 марта следующего года</span> </span>
+              <span class="news__list-desc"> <span>Управление образования Асбестовского городского округа выразило
+                  благодарность генеральному директору ООО «Гранула» Демидову Андрею Владимировичу за вклад в развитие
+                  с</span> </span>
+              <span class="news__date"> <span>03/04/2019</span> </span>
+              <span class="news__list-details">Подробнее</span> </span> </a>
+        </li>
+        <li class="news__item news__item_right"> <a class="news__list-link" href="#"> <span class="news__picture"
+              style="background-image:url(/static/news.e2c8d649.jpg);"></span>
+            <span class="news__text"> <span class="news__list-title"> <span>Министр природных ресурсов посетил
+                  «ГРАНПАРК»</span> </span>
+              <span class="news__list-desc"> <span>Управление образования Асбестовского городского округа выразило
+                  благодарность генеральному директору ООО «Гранула» Демидову Андрею Владимировичу за вклад в развитие
+                  с</span> </span>
+              <span class="news__date"> <span>03/04/2019</span> </span>
+              <span class="news__list-details">Подробнее</span> </span> </a>
+          <a class="news__list-link" href="#"> <span class="news__picture"
+              style="background-image:url(/static/news.e2c8d649.jpg);"></span>
+            <span class="news__text"> <span class="news__list-title"> <span>IV Всероссийский Конгресс «Промышленная
+                  экология регионов» пройдет в Екатеринбурге 13 и 14 марта следующего года</span> </span>
+              <span class="news__list-desc"> <span>Управление образования Асбестовского городского округа выразило
+                  благодарность генеральному директору ООО «Гранула» Демидову Андрею Владимировичу за вклад в развитие
+                  с</span> </span>
+              <span class="news__date"> <span>03/04/2019</span> </span>
+              <span class="news__list-details">Подробнее</span> </span> </a>
+          <a class="news__list-link" href="#"> <span class="news__picture"
+              style="background-image:url(/static/news.e2c8d649.jpg);"></span>
+            <span class="news__text"> <span class="news__list-title"> <span>Гранула оформит шефство над детским садом №
+                  59 «Малыш» в Асбесте</span> </span>
+              <span class="news__list-desc"> <span>Управление образования Асбестовского городского округа выразило
+                  благодарность генеральному директору ООО «Гранула» Демидову Андрею Владимировичу за вклад в развитие
+                  с</span> </span>
+              <span class="news__date"> <span>03/04/2019</span> </span>
+              <span class="news__list-details">Подробнее</span> </span> </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="system" style="background-image:url(/static/system-bg.1c52f180.jpg);">
+    <div class="container">
+      <div class="system__content">
+        <div class="system__tag"> <a class="tag" href="#">Система нулевого выброса</a> </div>
+        <div class="title system__title">
+          <h2>Экологическая политика ООО "Гранула" является одним из ключевых приоритетов деятельности компании</h2>
+        </div>
+        <ul class="system__list">
+          <li class="text system__text">
+            <p>ООО "Гранула", является резидентом Индустриального парка "GranPark", на базе которого ведет свою
+              деятельность Центр экологических проблем асбеста АО «НИИпроектасбест». Сотрудниками центра совместно с
+              экологами предприятия разработана и реализуется программа экологического мониторинга, включающая контроль
+              воздуха на выходе из фильтров и на границе санитарно защитной зоны Индустриального парка.</p>
+          </li>
+          <li class="text system__text">
+            <p>В настоящее время завершаются работы по переводу предприятия на более экологичный вид топлива - природный
+              газ.</p>
+          </li>
+          <li class="text system__text">
+            <p>Все виды деятельности имеют соответствующую разрешительную документацию со стороны Федеральных служб,
+              ответственных за реализацию экологической политики РФ.</p>
+          </li>
+        </ul>
+        <div class="system__btn"> <button class="button button_theme_outline">Подробнее о экологической
+            политике</button> </div>
+      </div>
+    </div>
+  </section>
+  <section class="smq">
+    <div class="container">
+      <div class="title smq__title">
+        <h2>Система менеджмента качества</h2>
+      </div>
+      <div class="text d-xl-flex smq__desc">
+        <p>С 2006 года в компании действует Корпоративная Система менеджмента качества, аккредитованная по станарту ISO
+          9001. Процессы входного контроля качества исходных компонентов, а также выходного контроля качества получаемой
+          продукции регулируются утвержденным Регламентом организации работ отдела технического контроля.</p>
+        <p>На весь перечень продукции разработаны Технические условия (ТУ), утвержденные заказчиками (отраслевыми
+          проектными организациями и нефтесервисными компаниями). Продукция сертифицирована в системах ГОСТ Р, ТЭКСЕРТ,
+          кроме того, имеются свидетельства на соответствие требованиям радиологической безопасности.</p>
+      </div>
+    </div>
+  </section>
+  <section class="certificates">
+    <div class="container">
+      <div class="certificates__top">
+        <a class="certificates__link" href="#">все сертификаты</a>
+        <div class="certificates__arrows">
+          <span class="certificates__arrow certificates__arrow_prev">
+            <span class="arrow arrow_with-border">
+              <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 17L1 9l8-8" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </span>
+          <span class="certificates__arrow certificates__arrow_next">
+            <span class="arrow arrow_with-border">
+              <svg width="10" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1l8 8-8 8" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </span>
+        </div>
+      </div>
+      <ul class="certificates__list js-certificates-slider">
+        <li class="certificates__item">
+          <div class="certificates__slider-content">
+            <a href="/static/cert1.6b25ef5f.jpg">
+              <img class="certificates__img" src="/static/cert1.6b25ef5f.jpg" alt="certificate">
+              <div class="certificates__desc">
+                <p>Свидетельство № 421545 на товарный знак (знак обслуживания) ЦТРО</p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="certificates__item">
+          <div class="certificates__slider-content">
+            <a href="/static/cert2.bc03a49c.jpg">
+              <img class="certificates__img" src="/static/cert2.bc03a49c.jpg" alt="certificate">
+              <div class="certificates__desc">
+                <p>Свидетельство № 422751 на товарный знак (знак обслуживания) ЦТОС</p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="certificates__item">
+          <div class="certificates__slider-content">
+            <a href="/static/cert3.334db244.jpg">
+              <img class="certificates__img" src="/static/cert3.334db244.jpg" alt="certificate">
+              <div class="certificates__desc">
+                <p>Свидетельство № 442656 на товарный знак (знак обслуживания) ЦТРС</p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="certificates__item">
+          <div class="certificates__slider-content">
+            <a href="/static/cert4.6b25ef5f.jpg">
+              <img class="certificates__img" src="/static/cert4.6b25ef5f.jpg" alt="certificate">
+              <div class="certificates__desc">
+                <p>Свидетельство № 421545 на товарный знак (знак обслуживания) ЦТРО</p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="certificates__item">
+          <div class="certificates__slider-content">
+            <a href="/static/cert4.6b25ef5f.jpg">
+              <img class="certificates__img" src="/static/cert4.6b25ef5f.jpg" alt="certificate">
+              <div class="certificates__desc">
+                <p>Свидетельство № 421545 на товарный знак (знак обслуживания) ЦТРО</p>
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <script src="/build/main.136b4b0c.js"></script>
+</body>
+
+</html>
